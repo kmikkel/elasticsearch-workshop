@@ -1,0 +1,10 @@
+{
+  "aggs": {
+    "by_weight": {
+      "histogram": {
+        "field": "weight",
+        "interval": 100
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+api:
+  build: .
+  links:
+    - elasticsearch
+  volumes:
+    - ".:/code"
+  environment:
+    - ELASTICSEARCH_URL=http://elasticsearch:9200
+elasticsearch:
+  image: elasticsearch:2.2
+  command: elasticsearch -Des.node.local=true
+  ports:
+    - "9200:9200"
+    - "9300:9300"

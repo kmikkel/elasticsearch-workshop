@@ -1,0 +1,14 @@
+{
+  "query": {
+    "filtered": {
+      "filter": {
+        "terms": {
+          "topping": [
+            "Bacon",
+            "Marinated Chicken"
+          ]
+        }
+      }
+    }
+  }
+}

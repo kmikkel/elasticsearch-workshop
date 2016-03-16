@@ -1,0 +1,9 @@
+{
+  "aggs": {
+    "weight_stats": {
+      "stats": {
+        "field": "weight"
+      }
+    }
+  }
+}

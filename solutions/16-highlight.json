@@ -1,0 +1,12 @@
+{
+  "query": {
+    "match": {
+      "name": "Bacon"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "name": {}
+    }
+  }
+}

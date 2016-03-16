@@ -1,0 +1,9 @@
+{
+  "aggs": {
+    "total_weight": {
+      "sum": {
+        "field": "weight"
+      }
+    }
+  }
+}

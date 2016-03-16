@@ -1,0 +1,9 @@
+{
+  "aggs": {
+    "toppings": {
+      "terms": {
+        "field": "topping"
+      }
+    }
+  }
+}

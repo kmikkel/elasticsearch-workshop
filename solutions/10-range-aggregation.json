@@ -1,0 +1,22 @@
+{
+  "aggs": {
+    "weight_ranges": {
+      "range": {
+        "field": "weight",
+        "ranges": [
+          {
+            "to": 500
+          },
+          {
+            "from": 500,
+            "to": 1000
+          },
+          {
+            "from": 1000,
+            "to": 1500
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "aggs": {
+    "facets": {
+      "filter": {
+        "bool": {
+          "must": [
+            {
+              "query": {
+                "match": {
+                  "name": "California"
+                }
+              }
+            },
+            {
+              "query": {
+                "term": {
+                  "topping": "Meatballs"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "aggs": {
+        "toppings": {
+          "terms": {
+            "field": "topping"
+          }
+        }
+      }
+    }
+  },
+  "post_filter": {
+    "bool": {
+      "must": [
+        {
+          "query": {
+            "match": {
+              "name": "California"
+            }
+          }
+        },
+        {
+          "query": {
+            "term": {
+              "topping": "Meatballs"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
