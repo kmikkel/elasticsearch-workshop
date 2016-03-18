@@ -18,6 +18,13 @@ I recommend using the Chrome extension [Sense](https://chrome.google.com/webstor
 
 > If your are a Windows user or don't want to use docker, [see](NON-DOCKER.md).
 
+### Are you not on the Statoil network?
+In the docker file, remove or comment out these two lines:
+```
+ENV http_proxy http://www-proxy.statoil.no:80/
+ENV https_proxy http://www-proxy.statoil.no:80/
+```
+
 ## Pizzas
 
 The data that are used during the workshop is a list of pizzas (see [data.json](data.json)), with the [mapping](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html):
