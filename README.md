@@ -2,7 +2,7 @@
  
 This repository contains 19 tasks for learning how to write [Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html).
 
-![](https://github.com/eoaksnes/workshop-elasticsearch/blob/master/tasks.png?raw=true)
+![](tasks.png?raw=true)
 
 During these tasks you will learn how to do [full-text search](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html), [filtering](https://www.elastic.co/guide/en/elasticsearch/reference/current/term-level-queries.html), [aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html), [highlightning](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html), [sorting](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-sort.html) and [pagination](https://www.elastic.co/guide/en/elasticsearch/guide/current/pagination.html).
 
@@ -16,11 +16,11 @@ In order to run the tasks described below, you need:
 
 I recommend using the Chrome extension [Sense](https://chrome.google.com/webstore/detail/sense-beta/lhjgkmllcaadmopgmanpapmpjgmfcfig) during the creation of queries.
 
-> If your are a Windows user or don't want to use docker, [see](https://github.com/eoaksnes/workshop-elasticsearch/blob/master/NON-DOCKER.md). 
+> If your are a Windows user or don't want to use docker, [see](NON-DOCKER.md).
 
 ## Pizzas
 
-The data that are used during the workshop is a list of pizzas (see [data.json](https://bitbucket.org/eoaksnes/workshop-elasticsearch/src/master/data.json)), with the [mapping](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html):
+The data that are used during the workshop is a list of pizzas (see [data.json](data.json)), with the [mapping](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html):
 
 ```
 {
@@ -70,4 +70,4 @@ Your task is to replace the `{ todo }` with the correct query.  The comment `use
 
 `$ make tests`
 
-> If your are a Windows user or don't want to use docker, [see](https://github.com/eoaksnes/workshop-elasticsearch/blob/master/NON-DOCKER.md). 
+> If your are a Windows user or don't want to use docker, [see](NON-DOCKER.md).
