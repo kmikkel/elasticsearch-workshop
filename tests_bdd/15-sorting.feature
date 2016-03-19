@@ -1,5 +1,7 @@
 Feature: Sorting
 
+  # Use: https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-sort.html
+
   Scenario: Sort all the pizzas by weight in descending order
     Given all pizzas are indexed
     When I make a query

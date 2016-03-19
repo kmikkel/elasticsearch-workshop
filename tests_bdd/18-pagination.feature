@@ -1,5 +1,7 @@
 Feature: Pagination
 
+  # Use: https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-from-size.html
+
   Scenario: Get the last five pizzas
     Given all pizzas are indexed
     When I make a query
