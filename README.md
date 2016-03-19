@@ -8,18 +8,35 @@ During these tasks you will learn how to do [full-text search](https://www.elast
 
 ## Prerequisites - Installation
 
-In order to run the tasks described below, you need:
+### Alternative 1 - Manual installations
+
+In order to run the tasks described below, the following must be installed:
+
+* [Git](https://git-scm.com/downloads)
+* [Python 2.7](https://www.python.org/downloads/)
+* [Pip](https://pip.pypa.io/en/stable/installing/)
+* [Elasticsearch 2.2](https://www.elastic.co/downloads/elasticsearch)
+* [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+
+> Elasticsearch is built using Java, and requires at least Java 7 in order to run. 
+
+Then, install all the required Python packages:
+
+`pip install -r requirements.txt`
+
+### Alternative 2 - Docker
+ 
+An alternative solution is to use Docker. 
+
+Then the following must be installed:
 
 * [Docker](https://www.docker.com/)
 * [Docker Compose](https://docs.docker.com/compose/)
 * make (`sudo apt-get install make` on Ubuntu)
 
-I recommend using the Chrome extension [Sense](https://chrome.google.com/webstore/detail/sense-beta/lhjgkmllcaadmopgmanpapmpjgmfcfig) during the creation of queries.
-
-> If your are a Windows user or don't want to use docker, [see](NON-DOCKER.md).
-
 ### Are you not on the Statoil network?
 In the docker file, remove or comment out these two lines:
+
 ```
 ENV http_proxy http://www-proxy.statoil.no:80/
 ENV https_proxy http://www-proxy.statoil.no:80/
@@ -75,6 +92,15 @@ Your task is to replace the `{ todo }` with the correct query.  The comment `use
 
 ## Running the tasks
 
-`$ make tests`
+I recommend using the Chrome extension [Sense](https://chrome.google.com/webstore/detail/sense-beta/lhjgkmllcaadmopgmanpapmpjgmfcfig) during the creation of queries.
 
-> If your are a Windows user or don't want to use docker, [see](NON-DOCKER.md).
+### Alternative 1 - Manual installations
+
+`behave --outfile=build/tasks-results`
+
+### Alternative 2 - Docker
+
+`$ make run-tasks`
+
+
+

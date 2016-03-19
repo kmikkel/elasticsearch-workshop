@@ -1,7 +1,7 @@
 FROM python:2.7
 
-ENV http_proxy http://www-proxy.statoil.no:80/
-ENV https_proxy http://www-proxy.statoil.no:80/
+# ENV http_proxy http://www-proxy.statoil.no:80/
+# ENV https_proxy http://www-proxy.statoil.no:80/
 
 RUN apt-get update && apt-get -y install sqlite3 libsqlite3-dev graphviz netcat postgresql-client
 
