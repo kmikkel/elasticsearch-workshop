@@ -2,7 +2,9 @@ Feature: Term level queries (exact terms)
 
   # Use: https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-term-query.html
 
-  # Extra info: Filters also need custom mapping also.
+  # Extra info: As you can see from the elasticsearch documentation, string
+  # fields should be set to not_analyzed when using term queries. We have
+  # already done this for 'topping' in mapping.json.
 
   Scenario: Find the pizzas that has "Marinated Beef" topping
     Given all pizzas are indexed
