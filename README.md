@@ -8,7 +8,7 @@ During these tasks you will learn how to do [full-text search](https://www.elast
 
 ## Prerequisites - Installation
 
-### Alternative 1 - Manual installations
+### Alternative 1 - Manual installation
 
 In order to run the tasks described below, the following must be installed:
 
@@ -26,7 +26,7 @@ Then, install all the required Python packages:
 
 ### Alternative 2 - Docker
  
-An alternative solution is to use Docker. 
+An alternative solution is to use [Docker](https://www.docker.com/what-docker). 
 
 Then the following must be installed:
 
@@ -35,6 +35,7 @@ Then the following must be installed:
 * make (`sudo apt-get install make` on Ubuntu)
 
 ### Are you not on the Statoil network?
+
 In the docker file, remove or comment out these two lines:
 
 ```
@@ -94,7 +95,7 @@ Your task is to replace the `{ todo }` with the correct query.  The comment `use
 
 I recommend using the Chrome extension [Sense](https://chrome.google.com/webstore/detail/sense-beta/lhjgkmllcaadmopgmanpapmpjgmfcfig) during the creation of queries.
 
-### Alternative 1 - Manual installations
+### Alternative 1 - Manual installation
 
 `behave --outfile=build/tasks-results`
 
