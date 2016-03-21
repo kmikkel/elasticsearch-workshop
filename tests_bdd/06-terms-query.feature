@@ -18,8 +18,7 @@ Feature: Term level queries (exact terms)
             "_source":{
               "topping":[
                 "Bacon"
-              ],
-              "name":"American Bacon"
+              ]             
             }
           },
           {
@@ -28,16 +27,14 @@ Feature: Term level queries (exact terms)
                 "Meatballs",
                 "Marinated Beef",
                 "Bacon"
-              ],
-              "name":"Take Away Meat Lover"
+              ]
             }
           },
           {
             "_source":{
               "topping":[
                 "Marinated Chicken"
-              ],
-              "name":"California Sunset Chicken"
+              ]
             }
           }
         ]
