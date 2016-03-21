@@ -1,4 +1,4 @@
-Feature: Term level queries (exact terms)
+Feature: Range queries
 
   # For (>, >=, <, <=) use: https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-range-query.html#query-dsl-range-query
 
