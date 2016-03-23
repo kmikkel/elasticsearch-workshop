@@ -4,7 +4,14 @@ This repository contains 19 tasks for learning how to write [Query DSL](https://
 
 ![](tasks.png?raw=true)
 
-During these tasks you will learn how to do [full-text search](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html), [filtering](https://www.elastic.co/guide/en/elasticsearch/reference/current/term-level-queries.html), [aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html), [highlightning](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html), [sorting](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-sort.html) and [pagination](https://www.elastic.co/guide/en/elasticsearch/guide/current/pagination.html).
+During these tasks you will learn how to do:
+
+* [full-text search](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) (task 0-4)
+* [filtering](https://www.elastic.co/guide/en/elasticsearch/reference/current/term-level-queries.html) (task 5-8)
+* [aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html) (task 9-13)
+* [sorting](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-sort.html) (task 15)
+* [highlightning](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html) (task 16)
+* [pagination](https://www.elastic.co/guide/en/elasticsearch/guide/current/pagination.html) (task 17-18) 
 
 ## Prerequisites - Installation
 
