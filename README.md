@@ -108,7 +108,7 @@ The comment `use https://...` points you to the page where you can find informat
 
 A query needs to return a correct response `{ subset }` to be passed. To make the tests more compact and easy to read, they only compare and validates against a `{ subset }`. 
 
-Solutions to all tasks can be found under `solutions/`.
+Solutions to all tasks can be found under [solutions](solutions).
 
 ## Running the tasks
 
