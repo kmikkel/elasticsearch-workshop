@@ -52,7 +52,13 @@ ENV https_proxy http://www-proxy.statoil.no:80/
 
 ## Pizzas
 
-The data that are used during the workshop is a list of pizzas (see [data.json](data.json)), with the [mapping](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html):
+The data that are used during the workshop is a list of pizzas, see [data.json](data.json).
+ 
+### Mapping
+
+[Mapping](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html) is the process of defining how a document, and the fields it contains, are stored and indexed.
+
+The pizzas has the mapping:
 
 ```
 {
@@ -96,7 +102,13 @@ Feature: Topic of the task
   """
 ```
 
-Your task is to replace the `{ todo }` with the correct query.  The comment `use https://...` points you to the page where you can find information about how to write the correct query. A query needs to return a correct response `{ subset }` to be passed.  To make the tests more compact and easy to read, they only compare and validates against a `{ subset }`. Solutions to all tasks can be found under `solutions/`.
+Your task is to replace the `{ todo }` with the correct query.  
+
+The comment `use https://...` points you to the page where you can find information about how to write the correct query. 
+
+A query needs to return a correct response `{ subset }` to be passed. To make the tests more compact and easy to read, they only compare and validates against a `{ subset }`. 
+
+Solutions to all tasks can be found under `solutions/`.
 
 ## Running the tasks
 
