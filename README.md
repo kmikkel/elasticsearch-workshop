@@ -6,12 +6,12 @@ This repository contains 19 tasks for learning how to write [Query DSL](https://
 
 During these tasks you will learn how to do:
 
-* [full-text search](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) (task 0-4)
-* [filtering](https://www.elastic.co/guide/en/elasticsearch/reference/current/term-level-queries.html) (task 5-8)
-* [aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html) (task 9-13)
-* [sorting](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-sort.html) (task 15)
-* [highlightning](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html) (task 16)
-* [pagination](https://www.elastic.co/guide/en/elasticsearch/guide/current/pagination.html) (task 17-18) 
+* [Full-text search](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) (task 0-4)
+* [Filtering](https://www.elastic.co/guide/en/elasticsearch/reference/current/term-level-queries.html) (task 5-8)
+* [Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html) (task 9-13)
+* [Sorting](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-sort.html) (task 15)
+* [Highlightning](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html) (task 16)
+* [Pagination](https://www.elastic.co/guide/en/elasticsearch/guide/current/pagination.html) (task 17-18) 
 
 ## Prerequisites - Installation
 
@@ -108,7 +108,7 @@ The comment `use https://...` points you to the page where you can find informat
 
 A query needs to return a correct response `{ subset }` to be passed. To make the tests more compact and easy to read, they only compare and validates against a `{ subset }`. 
 
-Solutions to all tasks can be found under [solutions](solutions).
+Solutions to all tasks can be found [here](solutions).
 
 ## Running the tasks
 
