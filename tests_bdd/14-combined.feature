@@ -1,6 +1,6 @@
 Feature: Full text queries, term level queries and aggregations combined
 
-  Scenario: Find pizzas with a name that contains the word "California" and that has "Meatballs" topping. Then, for every topping, count the number of pizzas containing that topping
+  Scenario: Find pizzas with a name that contains the word "California" and then, for every topping, count the number of pizzas containing that topping
     Given all pizzas are indexed
     When I make a query
     """
@@ -10,26 +10,41 @@ Feature: Full text queries, term level queries and aggregations combined
     """
     {
        "hits":{
-          "total":1,
+          "total":3,
           "hits":[
              {
                 "_source":{
-                    "name":"California Meatballs"
+                   "name":"California Malibu"
+                }
+             },
+             {
+                "_source":{
+                   "name":"California Meatballs"
+                }
+             },
+             {
+                "_source":{
+                   "name":"California Sunset Chicken"
                 }
              }
           ]
        },
        "aggregations":{
-          "facets":{
-             "doc_count":1,
-             "toppings":{
-                "buckets":[
-                   {
-                      "key":"Meatballs",
-                      "doc_count":1
-                   }
-                ]
-             }
+          "toppings":{
+             "buckets":[
+                {
+                   "key":"Ham",
+                   "doc_count":1
+                },
+                {
+                   "key":"Marinated Chicken",
+                   "doc_count":1
+                },
+                {
+                   "key":"Meatballs",
+                   "doc_count":1
+                }
+             ]
           }
        }
     }
