@@ -4,20 +4,7 @@ Feature: Full text queries, term level queries and aggregations combined
     Given all pizzas are indexed
     When I make a query
     """
-    {
-      "aggs": {
-        "toppings": {
-          "terms": {
-            "field": "topping"
-          }
-        }
-      },
-      "query": {
-        "match": {
-          "name": "California"
-        }
-      }
-    }
+    { todo }
     """
     Then the response should contain
     """
