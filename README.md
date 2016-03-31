@@ -21,9 +21,14 @@ Get the code:
 git clone https://github.com/BouvetNord/elasticsearch-workshop
 ```
 
+In order to support multiple platforms, we have provided two installation
+methods. We recommend that Windows users follow the manual installation guide.
+Linux users will probably want to use Docker, but manual installation is of
+course also possible on Linux.
+
 ### Alternative 1 - Manual installation
 
-In order to run the tasks described below, the following must be installed:
+The following must be installed:
 
 * [Git](https://git-scm.com/downloads)
 * [Python 2.7](https://www.python.org/downloads/)
@@ -143,7 +148,17 @@ I recommend using the Chrome extension [Sense](https://chrome.google.com/webstor
 
 ### Alternative 1 - Manual installation
 
-`behave --outfile=build/tasks-results`
+Make sure elasticsearch is up and running before trying to run tasks. To start
+elasticsearch, open a terminal window and run
+`<elasticsearch-directory>/bin/elasticsearch`.
+
+#### Windows
+
+`> run-tasks.cmd`
+
+#### Linux
+
+`$ ./run-tasks.sh`
 
 ### Alternative 2 - Docker
 
