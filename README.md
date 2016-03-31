@@ -41,8 +41,9 @@ setx HTTPS_PROXY "http://www-proxy.statoil.no:80"
 setx HTTP_PROXY "http://www-proxy.statoil.no:80"
 
 setx JAVA_HOME "c:\Program Files\Java\jre1.7.0_72"
-set PATH=%PATH%;c:\appl\Python27;c:\appl\Python27\Scripts
 (restart cmd)
+
+set PATH=%PATH%;c:\appl\Python27;c:\appl\Python27\Scripts
 ```
 
 Linux:
@@ -69,13 +70,11 @@ Then the following must be installed:
 * [Docker Compose](https://docs.docker.com/compose/)
 * make (`sudo apt-get install make` on Ubuntu)
 
-#### Are you not on the Statoil network?
-
-In the docker file, remove or comment out these two lines:
+If you are on the Statoil network, comment in these two lines in the [Dockerfile](Dockerfile):
 
 ```
-ENV http_proxy http://www-proxy.statoil.no:80/
-ENV https_proxy http://www-proxy.statoil.no:80/
+# ENV http_proxy http://www-proxy.statoil.no:80/
+# ENV https_proxy http://www-proxy.statoil.no:80/
 ```
 
 ## Pizzas
