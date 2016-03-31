@@ -15,6 +15,12 @@ During these tasks you will learn how to do:
 
 ## Prerequisites - Installation
 
+Get the code:
+
+```
+git clone https://github.com/BouvetNord/elasticsearch-workshop
+```
+
 ### Alternative 1 - Manual installation
 
 In order to run the tasks described below, the following must be installed:
@@ -27,9 +33,31 @@ In order to run the tasks described below, the following must be installed:
 
 > Elasticsearch is built using Java, and requires at least Java 7 in order to run. 
 
+Windows: 
+
+```
+// If you are on the Statoil network 
+setx HTTPS_PROXY "http://www-proxy.statoil.no:80"
+setx HTTP_PROXY "http://www-proxy.statoil.no:80"
+
+setx JAVA_HOME "c:\Program Files\Java\jre1.7.0_72"
+set PATH=%PATH%;c:\appl\Python27;c:\appl\Python27\Scripts
+(restart cmd)
+```
+
+Linux:
+
+```
+// If you are on the Statoil network
+export HTTPS_PROXY="http://www-proxy.statoil.no:80"
+export HTTP_PROXY="http://www-proxy.statoil.no:80"
+```
+
 Then, install all the required Python packages:
 
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 ### Alternative 2 - Docker
  
@@ -41,7 +69,7 @@ Then the following must be installed:
 * [Docker Compose](https://docs.docker.com/compose/)
 * make (`sudo apt-get install make` on Ubuntu)
 
-### Are you not on the Statoil network?
+#### Are you not on the Statoil network?
 
 In the docker file, remove or comment out these two lines:
 
