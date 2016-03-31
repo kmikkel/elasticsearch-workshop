@@ -154,15 +154,15 @@ elasticsearch, open a terminal window and run
 
 #### Windows
 
-`> run-tasks.cmd`
+`run-tasks.cmd`
 
 #### Linux
 
-`$ ./run-tasks.sh`
+`./run-tasks.sh`
 
 ### Alternative 2 - Docker
 
-`$ make run-tasks`
+`make run-tasks`
 
 
 
