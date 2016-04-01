@@ -30,6 +30,20 @@ ps:
 logs:
 	$(DOCKER_COMPOSE) logs
 
+# Test
+
+nosetests: pyclean
+	$(DOCKER_RUN_API_ONLY) nosetests \
+        --where=tests_unit \
+        --debug \
+        --no-byte-compile \
+        --with-xcoverage \
+        --xcoverage-file=build/coverage.xml \
+        --with-xunit \
+        --xunit-file=build/nosetests.xml \
+        --cover-erase \
+        --cover-package=.
+
 # Workshop
 
 run-tasks: pyclean
