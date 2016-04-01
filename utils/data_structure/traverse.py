@@ -48,8 +48,8 @@ def traverse_compare(actual, expected, ignoreKeyErrors=False, ignoreIndexErrors=
                 if actual_value != expected_value:
                     result.append({
                         'path': to_dot_notation(path),
-                        'expected_value': actual_value,
-                        'actual_value': expected_value
+                        'actual_value': actual_value,
+                        'expected_value': expected_value
                     })
             except KeyError:
                 print("I got a KeyError - path: %s" % str(to_dot_notation(path)))
