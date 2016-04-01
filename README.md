@@ -115,7 +115,7 @@ The pizzas has the mapping:
 ```
 ## Tasks
 
-The tasks are feature tests, and they look like this:
+The [tasks](tests_bdd) are feature tests, and they look like this:
 
 ```
 Feature: Topic of the task
