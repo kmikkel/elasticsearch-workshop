@@ -1,6 +1,6 @@
 Feature: Term level queries (exact terms)
 
-  # Use: https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-terms-query.html
+  # Use: https://www.elastic.co/guide/en/elasticsearch/guide/current/_finding_multiple_exact_values.html
 
   Scenario: Find the pizzas that has "Bacon" or "Marinated Chicken" topping
     Given all pizzas are indexed
@@ -18,7 +18,7 @@ Feature: Term level queries (exact terms)
             "_source":{
               "topping":[
                 "Bacon"
-              ]             
+              ]
             }
           },
           {
@@ -41,4 +41,3 @@ Feature: Term level queries (exact terms)
       }
     }
     """
-
