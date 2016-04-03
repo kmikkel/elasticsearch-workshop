@@ -2,6 +2,8 @@ Feature: Aggregations
 
   # Use https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-histogram-aggregation.html
 
+  # Note that the name of the bucket aggregation in the response (by_weight) is the one used in the query.    
+
   Scenario: Make a histogram of the pizzas weight with an interval of 100
     Given all pizzas are indexed
     When I make a query
