@@ -1,8 +1,8 @@
 Feature: Full text queries
 
-   # Use https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query.html
+  # Use https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query.html
 
-  Scenario: Find the pizzas with a name that contains the word "American"
+  Scenario: Find the pizzas with a name that contains the word "Meatballs"
     Given all pizzas are indexed
     When I make a query
     """
@@ -12,16 +12,11 @@ Feature: Full text queries
     """
     {
       "hits":{
-        "total":2,
+        "total":1,
         "hits":[
           {
             "_source":{
-              "name":"American Bacon"
-            }
-          },
-          {
-            "_source":{
-              "name":"Classic American"
+              "name":"California Meatballs"
             }
           }
         ]

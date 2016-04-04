@@ -6,6 +6,8 @@ Feature: Term level queries (exact terms)
   # fields should be set to not_analyzed when using term queries. We have
   # already done this for 'topping' in mapping.json.
 
+  # Can you figure out the difference between "match" and "term"?
+
   Scenario: Find the pizzas that has "Marinated Beef" topping
     Given all pizzas are indexed
     When I make a query

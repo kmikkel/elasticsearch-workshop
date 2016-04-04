@@ -1,7 +1,6 @@
 {
   "query": {
     "match": {
-      "name": "American"
+      "name": "Meatballs"
     }
   }
-}
