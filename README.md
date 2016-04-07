@@ -13,6 +13,10 @@ During these tasks you will learn how to do:
 * [Highlightning](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html) (task 16)
 * [Pagination](https://www.elastic.co/guide/en/elasticsearch/guide/current/pagination.html) (task 17-18) 
 
+## Presentation 
+
+The slides used for the workshop can be found at [http://bouvetnord.github.io/elasticsearch-workshop-slides](http://bouvetnord.github.io/elasticsearch-workshop-slides).
+
 ## Prerequisites - Installation
 
 Get the code:
