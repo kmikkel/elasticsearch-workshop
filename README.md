@@ -6,9 +6,11 @@ This repository contains 19 tasks for learning how to write [Query DSL](https://
 
 During these tasks you will learn how to do:
 
-* [Full-text search](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) (task 0-4)
+* [Match all](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-all-query.html) (task 0) 						
+* [Full-text search](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) (task 1-4)
 * [Filtering](https://www.elastic.co/guide/en/elasticsearch/reference/current/term-level-queries.html) (task 5-8)
 * [Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html) (task 9-13)
+* Combine full-text search and aggregations (task 14)
 * [Sorting](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-sort.html) (task 15)
 * [Highlightning](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html) (task 16)
 * [Pagination](https://www.elastic.co/guide/en/elasticsearch/guide/current/pagination.html) (task 17-18) 
